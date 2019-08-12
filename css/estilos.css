@@ -1,0 +1,17 @@
+body{
+	background-color: #000000;
+}
+
+.black{
+	background-color: #101010;
+}
+
+.footer{
+	color: #fff;
+	background: #101010;
+}
+/*@media(max-width: 1600px){
+	.col-bottom{
+		margin-bottom: 5px;
+	}
+}*/
