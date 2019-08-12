@@ -24,19 +24,19 @@
 						<a class="nav-link" href="">Inicio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Directorio</a>
+						<a class="nav-link" href="#directorio">Directorio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Asociados</a>
+						<a class="nav-link" href="#asociados">Asociados</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Reglamento</a>
+						<a class="nav-link" href="#reglamento">Reglamento</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Código de ética</a>
+						<a class="nav-link" href="#codigoEtica">Código de ética</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
+						<a class="nav-link" href="#contacto">Contacto</a>
 					</li>
 				</ul>
 			</div>
@@ -148,7 +148,7 @@
 		</div>
 
 		<!-- Button to Open the Modal -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reglamento">Abrir Reglamento</button>
+		<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reglamento">Abrir Reglamento</button>-->
 
 		<!-- The Modal -->
 		<div class="modal fade" id="reglamento">
@@ -164,9 +164,7 @@
 					<!-- Modal body -->
 					<div class="modal-body">
 						<p class="text-justify">ARTÍCULO 1.- NOMBRE: El nombre de esta Organización es INSTITUTO MEXICANO DE INVESTIGACIÓN CIENTÍFICA Y FORENSE, en lo sucesivo denominado “EL INSTITUTO” o “IMEINCIFO”.</p>
-
 						<p class="text-justify">ARTICULO 2. – UBICACION DEL INSTITUTO: La Sede del INSTITUTO estará ubicada en CIUDAD JUÁREZ, CHIHUAHUA, MÉXICO, en caso de que el Consejo se reúna para llevar a cabo la Reunión Anual fuera de la Sede en Ciudad Juárez, la Ciudad Anfitrión será considerada Sede temporal del INSTITUTO, mientras se desarrolle el evento, solo los MIEMBROS Y/O ASOCIADOS FUNDADORES podrán cambiar la sede del INSTITUTO.</p>
-
 						<p class="text-justify">ARTICULO 3.- OBJETIVOS: Los objetivos de este INSTITUTO serán promover el profesionalismo, la integridad y la competencia en las acciones de sus miembros y/o asociados y actividades asociadas a ellos a la propia Institución; promover la educación y la investigación en el ámbito de las ciencias forenses; fomentar el estudio, mejorar la práctica, elevar los estándares y promover el avance de las ciencias forenses; promover la comunicación interdisciplinaria;  y planear, organizar y administrar reuniones, informes y otros proyectos para la estimular y avanzar en estos propósitos.</p>
 						<p class="text-justify">ARTICULO 4. – MIEMBROS Y/O ASOCIADOS Y/O ASOCIADOS: Los miembros y/o asociados y/o asociados del INSTITUTO podrán ser Funcionarios de Gobierno, Profesionales Particulares que presten sus servicios como defensores o para los defensores y Pasantes o Estudiantes en Ciencias Forenses o carreras afines. Habrá cuatro clases de miembros y/o asociados:
 						<br>I.- FUNDADORES
@@ -210,7 +208,7 @@
 		</div>
 
 		<!-- Button to Open the Modal -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#codigoEtica">Abrir código de ética</button>
+		<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#codigoEtica">Abrir código de ética</button>-->
 
 		<!-- The Modal -->
 		<div class="modal" id="codigoEtica">
@@ -309,11 +307,18 @@
 		</footer>
 	</div>
 
-
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		$('a[href$="#reglamento"]').on( "click", function() {
+			$('#reglamento').modal('show');
+		});
+		$('a[href$="#codigoEtica"]').on( "click", function() {
+			$('#codigoEtica').modal('show');
+		});
+
+	</script>
 </body>
 
 </html>
